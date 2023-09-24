@@ -2,6 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Simple xcel file analyzer. It will show you the data in the file and you can search and apply filters on the data. You can also
+download the file as Pdf .
+
 First, run the development server:
 
 ```bash
