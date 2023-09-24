@@ -46,7 +46,6 @@ function MyTable({
   tableRows,
   colorScheme,
   color,
-  subTitle,
   arr,
   numberFiled,
 }) {

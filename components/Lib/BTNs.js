@@ -61,7 +61,7 @@ export default function IconBtn({
   Icons,
   onClick,
   disabled,
-  size = ["2xl", "3xl", "5xl"],
+  size = ["xl", "3xl", "5xl"],
   colorScheme = "gray",
 }) {
   return (

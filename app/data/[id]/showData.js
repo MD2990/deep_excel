@@ -47,7 +47,7 @@ function apiEndpoints({ index }) {
       endpoint: `${process.env.NEXT_PUBLIC_IP}/filter?`,
       method: "POST",
     },
-  
+
     defaultApi: {
       endpoint: `${process.env.NEXT_PUBLIC_IP}/getById?`,
       method: "GET",
@@ -126,7 +126,6 @@ export default function ShowData({ serverData, keys, allData, count }) {
       });
   }, [count, id, keys, serverData]);
 
-
   const handleShowHide = useCallback(
     (e) => {
       const { value, checked } = e.target;
@@ -192,11 +191,13 @@ export default function ShowData({ serverData, keys, allData, count }) {
         <Top
           mt={"1%"}
           data={snap.isFilteredData ? state.data : state.dbData}
-          total={`${snap.isFilteredData ? snap.count : count}  of ${count}` ||"No Data"}
+          total={
+            `${snap.isFilteredData ? snap.count : count}  of ${count}` ||
+            "No Data"
+          }
           link="/"
           title="Add New Data"
           noAddBtn
-         
         >
           <TopBtn
             title="Back"
@@ -214,9 +215,9 @@ export default function ShowData({ serverData, keys, allData, count }) {
             onClose={onClose}
             data={snap.isFilteredData ? state.data : state.dbData}
             size="2xl"
+            title={id.replace(/%20/g, " ")}
           />
         </Top>
-      
 
         {snap.filteredData.length && (
           <Wrap
@@ -237,12 +238,10 @@ export default function ShowData({ serverData, keys, allData, count }) {
           </Wrap>
         )}
 
-       
-
         <MyTable
           color="teal.300"
           size={"sm"}
-          tableTitle={state.title}
+          tableTitle={id.replace(/%20/g, " ")}
           data={state.isFilteredData ? snap.data : serverData}
           colorScheme={"teal"}
           tableHeads={snap.tableHeads}

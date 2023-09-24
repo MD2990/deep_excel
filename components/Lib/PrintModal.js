@@ -26,6 +26,7 @@ function PrintModal({
   titlesFilter = ["_id", "__v"],
   newTitlesFilter,
   size = ["sm", "lg", "3xl", "5xl"],
+  title
 }) {
   const snap = useSnapshot(state);
   const router = useSearchParams();
@@ -71,7 +72,7 @@ function PrintModal({
       DB: data,
       titles: state.titles,
       keysFilter: state.titles,
-      title: state.title,
+       title,
       leftTitle: `Total: ${data.length}`,
       style: "l",
     });

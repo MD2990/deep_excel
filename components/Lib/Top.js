@@ -21,7 +21,7 @@ export default function Top({
       p="1"
       align={"flex-end"}
       m="1"
-      ml={{ base: "3.5rem", md: "1rem" }}
+     
       mt={mt}
       bg="gray.100"
       rounded={"lg"}

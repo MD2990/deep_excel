@@ -56,6 +56,7 @@ export default function SearchInputField({ onClick }) {
         title={"Search"}
         Icons={snap.isLoading ? <BiLoaderCircle /> : <FcSearch />}
         disabled={snap.searchTerm.length < 2 || snap.isLoading}
+        
       />
     </HStack>
   );
