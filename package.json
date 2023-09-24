@@ -1,18 +1,43 @@
 {
-  "name": "deep_excel",
-  "version": "0.1.0",
+  "name": "get_data",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
+    "upg": "pnpm up --latest",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.50.0",
-    "eslint-config-next": "13.5.2",
-    "next": "13.5.2",
+    "@chakra-ui/next-js": "^2.1.5",
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "axios": "^1.5.0",
+    "eslint-config-next": "13.5.1",
+    "formik": "^2.4.5",
+    "framer-motion": "^10.16.4",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.6.0",
+    "next": "13.5.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "react-paginate": "^8.2.0",
+    "react-select": "^5.7.4",
+    "sweetalert2": "^11.7.28",
+    "swr": "^2.2.2",
+    "valtio": "^1.11.2",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.20",
+    "@babel/eslint-parser": "^7.22.15",
+    "@next/eslint-plugin-next": "^13.5.1",
+    "eslint": "8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-valtio": "^0.6.2",
+    "prettier": "^3.0.3"
   }
 }
